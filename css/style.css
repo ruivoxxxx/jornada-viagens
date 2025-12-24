@@ -1,6 +1,11 @@
-/* background
-botoes
-texto */
+@font-face{
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 :root {
   --backgorund-primary-color: #ffffff;
@@ -12,6 +17,12 @@ texto */
 
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
+
+
+  --titles-weight:700;
+  --titles-weight:400;
+  --menu-text-weight:500;
+
 }
 
 body,
@@ -28,4 +39,10 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+h1{
+  font-weight: var(--titles-weight);
+  color: var(--button-primary-color);
 }
