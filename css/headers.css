@@ -18,3 +18,7 @@ nav {
   height: 64px;
   display: inline-block;
 }
+
+input[type]:checked ~ nav {
+  display: block;
+}
