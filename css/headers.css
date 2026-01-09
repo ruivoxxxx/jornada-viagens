@@ -1,0 +1,103 @@
+header {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 48px;
+  position: relative;
+}
+
+nav {
+  display: none;
+}
+.navigation-menu {
+  margin-top: 25px;
+  margin-right: 30px;
+}
+.logo {
+  width: 68px;
+  height: 64px;
+  display: inline-block;
+ 
+}
+
+input[type]:checked ~ nav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0px;   
+  background-color: var(--background-tertiary-color);
+}
+.list-links{
+    list-style: none;
+    font-family: "Montserrat";
+    
+}
+.list-links li{
+  margin:16px 0px;
+}
+
+.list-links li a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    font-weight: var(--menu-text-weight);
+    font-size: 24px;
+
+}
+.logo-desktop{
+  display: none;
+}
+
+@media screen and (min-width:768px){
+
+  .logo {
+  width: 68px;
+  height: 64px;
+  display: inline-block;
+  margin-top: 11px;
+}
+  
+  .navigation-menu{
+    margin: 0;
+    width:467px
+  }
+  .navigation-menu label{
+  display:none
+}
+  .navigation-menu nav{
+  display: block;
+}
+.navigation-menu ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.logo-desktop{
+  display: none;
+}
+} 
+
+@media screen and (min-width:1024px) {
+
+  header{
+    padding: 38px 120px;
+  }
+  .logo{
+    display: none;
+  }               
+
+  .logo-desktop{
+    display: inline-block;
+    width: 260px;
+    height: 64px;
+    margin-top: 11px;
+   
+  }
+  .list-links li a:hover{
+    color:var(--button-hover-color);
+    
+  }
+}
