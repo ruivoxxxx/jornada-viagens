@@ -9,6 +9,10 @@
     font-size: 20px;
     color: var(--text-primary-color);
     font-weight: var(--text-weight);
+    padding:88px 24px;
+    text-align: center;
+    line-height: 1.5;
+    height: 256px;
 }
 
 @media screen and (min-width:768px){
@@ -19,13 +23,14 @@
         
     }
     .text-hero{
-        font-family: "Montserrat";
+        
+        height: 256px;
         font-size: 32px;
-        font-weight: var(--text-weight);
+        padding: 80px 60px;
     }
     
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .hero-img{
         height: 620px;
         background: url(../img/hero-img-desktop.jpg) no-repeat;
@@ -34,7 +39,17 @@
     .text-hero{
         font-family: "Montserrat";
         font-size: 32px;
-        font-weight: var(--titles-weight);
+        padding: 104px 120px;
+        height: 300px;
+        
+        
     }
     
+}
+
+@media screen and (min-width:1920px) {
+    .text-hero{
+        padding: 104px 160px;
+        
+    }
 }
