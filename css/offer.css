@@ -12,10 +12,10 @@
 .card header {
   display: block;
   padding: 0px;
-  /* background-color: transparent; */
   position: static;
   font-size: 20px;
   font-weight: var(--text-weight);
+  margin-bottom: 16px;
 }
 .card h3 {
   font-size: 40px;
@@ -26,4 +26,30 @@
   font-size: 32px;
   margin: 24px 0px;
   display: inline-block;
+}
+
+.button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--button-primary-color);
+  color: var(--text-secondary-color);
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+  .card h3 {
+    font-size: 48px;
+  }
+  .card span {
+    font-size: 40px;
+  }
 }

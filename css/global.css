@@ -11,7 +11,7 @@
   --background-tertiary-color: #000000;
 
   --button-primary-color: #b81515;
-  --button-hover-color: #bf0101;
+  --button-hover-color: #8f0f0f;
 
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
@@ -62,5 +62,8 @@ body {
 @media screen and (min-width: 1024px) {
   .section-title hr {
     margin-bottom: 64px;
+  }
+  .button:hover {
+    background-color: var(--button-hover-color);
   }
 }
