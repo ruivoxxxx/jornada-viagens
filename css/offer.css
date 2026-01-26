@@ -1,3 +1,9 @@
+/* .offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+} */
 .card {
   text-align: center;
   padding: 24px 16px;
@@ -11,6 +17,7 @@
 
 .card header {
   display: block;
+  background-color: transparent;
   padding: 0px;
   position: static;
   font-size: 20px;
@@ -39,6 +46,23 @@
   font-size: 20px;
   border-radius: 8px;
   font-weight: bolder;
+}
+
+.card.japao {
+  background: url(../img/japao-card.jpg) no-repeat;
+  background-size: cover;
+}
+.card.andreas {
+  background: url(../img/san-andreas-card.png) no-repeat;
+  background-size: cover;
+}
+.card.fortaleza {
+  background: url(../img/fortal-card.jpg) no-repeat;
+  background-size: cover;
+}
+.card.manaus {
+  background: url(../img/manaus-card.jpg) no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1024px) {
