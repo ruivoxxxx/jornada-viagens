@@ -11,7 +11,7 @@
   --background-tertiary-color: #000000;
 
   --button-primary-color: #b81515;
-  --button-hover-color: #bf0101;
+  --button-hover-color: #8f0f0f;
 
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
@@ -21,7 +21,6 @@
   --menu-text-weight: 500;
 }
 
-body,
 img,
 h1,
 p,
@@ -35,4 +34,37 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  color: var(--text-primary-color);
+  margin: 0px;
+}
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  text-align: center;
+}
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-primary-color);
+  margin: 16px auto 32px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-title hr {
+    margin-bottom: 64px;
+  }
+  .button:hover {
+    background-color: var(--button-hover-color);
+  }
 }

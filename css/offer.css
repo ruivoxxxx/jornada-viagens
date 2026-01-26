@@ -1,0 +1,96 @@
+.card-offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.card {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--background-primary-color);
+  background-color: var(--background-tertiary-color);
+  width: 312px;
+  height: 288px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.card header {
+  display: block;
+  background-color: transparent;
+  padding: 0px;
+  position: static;
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 40px;
+  font-weight: var(--titles-weight);
+  margin: 8px 0px;
+}
+.card span {
+  font-size: 32px;
+  margin: 24px 0px;
+  display: inline-block;
+}
+
+.button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--button-primary-color);
+  color: var(--text-secondary-color);
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
+.card.japao {
+  background: url(../img/japao-card.jpg) no-repeat;
+  background-size: cover;
+}
+.card.andreas {
+  background: url(../img/san-andreas-card.png) no-repeat;
+  background-size: cover;
+}
+.card.fortaleza {
+  background: url(../img/fortal-card.jpg) no-repeat;
+  background-size: cover;
+}
+.card.manaus {
+  background: url(../img/manaus-card.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .card-offers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 456px;
+    height: 308px;
+  }
+  .card h3 {
+    font-size: 48px;
+  }
+  .card span {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card {
+    width: 630px;
+  }
+}
