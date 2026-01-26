@@ -39,6 +39,7 @@ button {
 body {
   font-family: "Montserrat";
   color: var(--text-primary-color);
+  margin: 0px;
 }
 .section-title h2 {
   font-size: 28px;
