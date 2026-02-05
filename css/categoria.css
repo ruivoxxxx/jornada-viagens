@@ -16,8 +16,15 @@
   background-color: var(--backcground-secondary-color);
   border-radius: 8px;
 }
+.categoria-card .link-categoria {
+  text-decoration: none;
+  color: inherit;
+}
 .categoria-card img {
-  margin: 41px 116px 0px;
+  margin: 41px 122px 0px;
+}
+.categoria-card .link-categoria .image-tran sfer {
+  padding-top: 28px;
 }
 .categoria-card h4 {
   text-align: center;
