@@ -41,7 +41,7 @@ body {
   color: var(--text-primary-color);
   margin: 0px;
 }
-.section-title h2 {
+.section-title h4 {
   font-size: 28px;
   font-weight: var(--titles-weight);
   text-align: center;
